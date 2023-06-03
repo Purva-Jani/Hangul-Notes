@@ -28,16 +28,3 @@ $(function() {
 });
 
 //reference: var modal = btn.closest('.modal').style.display = "none";
-
-// show image on click
-
-document.querySelectorAll(".load-image idols").forEach((item) => {
-    item.addEventListener("click", (event) => {
-      const href = event.target.getAttribute("href");
-      event.preventDefault();
-      const newImage = document.createElement(".idols");
-      newImage.setAttribute("src", href);
-      document.body.insertBefore(newImage, event.target);
-      event.target.remove();
-    });
-});
