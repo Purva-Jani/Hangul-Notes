@@ -47,13 +47,12 @@ pre {
     color: black;
     opacity: 0.7;
     transition: all 0.3s ease;
-  
-    &:hover {
-      background: rgba(255, 255, 255, 1);
-      transform: scale(1.05);
-    }
 }
 
+.load-image:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+  }
 
 /* modal */
 
@@ -73,17 +72,18 @@ pre {
     width: 200px;
     max-width: 300px;
     margin: auto;
+    transition: all 0.3s ease;
 }
 
 .modal-open:hover {
     background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
     color: black;
 }
 
 .modal-open span {
     display: inline-block;
     position: relative;
-    transition: 0.5s;
 }
 
 .modal-open span:after {
@@ -92,7 +92,6 @@ pre {
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.5s;
 }
 
 .modal {
@@ -100,7 +99,7 @@ pre {
     position: fixed;
     z-index: 2;
     padding-top: 75px;
-    padding-bottom: 125px;
+    padding-bottom: 75px;
     left: 0;
     right: 0;
     top: 0;
@@ -127,15 +126,12 @@ pre {
     z-index: 4;
 }
 
-
 .modal-header {
     padding: 20px 16px;
     background-color: rgba(47, 56, 105, 0.3);
     font-size: 30px;
     color: white;
 }
-
-
 
 .modal-body {
     padding: 2px 16px;
